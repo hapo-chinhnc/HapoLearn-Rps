@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "UTM";
+  src: url("../fonts/UTMBryantLG.ttf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "UTM";
+  src: url("../fonts/UTMBryantLG_B.ttf");
+  font-style: normal;
+  font-weight: bold; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-style: normal;
+  font-weight: bold; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+body {
+  font-family: UTM;
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

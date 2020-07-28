@@ -1,0 +1,11 @@
+@import 'variable';
+@include font-face('UTM', '../fonts/UTMBryantLG.ttf', normal);
+@include font-face('UTM', '../fonts/UTMBryantLG_B.ttf', bold);
+@include font-face('Open Sans', '../fonts/OpenSans-Bold.ttf', bold);
+@include font-face('Open Sans', '../fonts/OpenSans-Regular.ttf', normal);
+
+body {
+    font-family: UTM ;
+    margin: 0;
+    padding: 0;
+}
