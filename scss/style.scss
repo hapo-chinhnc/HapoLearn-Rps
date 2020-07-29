@@ -29,7 +29,6 @@ body {
       background: $color-green;
       border-radius: 17px;
       color: #fff !important;
-      -webkit-text-stroke: 0 white;
     }
   }  
 }
@@ -74,11 +73,10 @@ header {
       border-radius: 35px;
       box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
       @include font-UTM(bold, 30px, 37px);
-    }
-
-    a:hover {
-      background-color: $color-green-brighter;
-      box-shadow: none;
+      &:hover {
+        background-color: $color-green-brighter;
+        box-shadow: none;
+      }
     }
   }
 }
