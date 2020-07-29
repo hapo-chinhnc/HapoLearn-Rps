@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .navbar-nav {
       .nav-item {
         margin: 10px 5px;
@@ -6,7 +6,7 @@
       }
     }
   
-    .hapolearn-banner1 {
+    .hapolearn-banner {
       div {
         h1 {
           @include font-UTM(normal, 30px, 37px);
@@ -48,7 +48,7 @@
       }
     }
   
-    .hapolearn-banner1 {
+    .hapolearn-banner {
       div {
         position: static;
         margin-left: 10% !important;
