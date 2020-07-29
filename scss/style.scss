@@ -5,7 +5,84 @@
 @include font-face('Open Sans', '../fonts/OpenSans-Regular.ttf', normal);
 
 body {
-    font-family: UTM ;
-    margin: 0;
-    padding: 0;
+  font-family: UTM ;
+  margin: 0;
+  padding: 0;
+}
+
+#collapsibleNavbar {
+
+  ul {
+      text-align: center;
+
+       a {
+          color: $color-gray;
+          padding: 8px 10px;
+          text-transform: uppercase;
+          @include font-Ops(bolder, 1em, 1.25em);
+        }
+        
+    }
+}
+
+.navbar-nav {
+
+  .nav-item:hover {
+
+    a {
+      background: $color-xanh;
+      border-radius: 17px;
+      color: #fff !important;
+      -webkit-text-stroke: 0 white;
+    }
+  }  
+}
+
+.navbar-nav {
+
+  .nav-item {
+    margin: 0 10px;
+  }
+}
+
+.no-gutters {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+
+    .nav-item:hover {
+  
+      a {
+        background-color: white;
+        border-radius: 0;
+        color: $color-xanh !important;
+      }
+    }  
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  .navbar-nav {
+
+    .nav-item {
+
+      a {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .navbar-nav {
+
+    .nav-item {
+      margin: 0 5px;
+    }
+  }
 }

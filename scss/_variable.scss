@@ -6,3 +6,16 @@
     font-weight: $font-weight;
 	}
 }
+
+@mixin font-UTM($font-weight, $font-size, $line-height) {
+  font: $font-weight $font-size UTM;
+  line-height: $line-height;
+}
+
+@mixin font-Ops($font-weight, $font-size, $line-height) {
+  font: $font-weight $font-size 'Open Sans';
+  line-height: $line-height;
+}
+
+$color-xanh: #B2D235;
+$color-gray: #505353;
