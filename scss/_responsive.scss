@@ -19,8 +19,8 @@
       a {
         width: 200px;
         height: 38px;
-        @include font-UTM(bold, 16px, 20px);
         padding-top: 5px;
+        @include font-UTM(bold, 16px, 20px);
       }
     }
   }
