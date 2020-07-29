@@ -49,7 +49,7 @@ header {
   background-image: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
 }
 
-#banner1 {
+.hapolearn-banner1 {
   div {
     position: absolute;
     top: 30%;
@@ -83,83 +83,4 @@ header {
   }
 }
 
-@media (max-width: 576px) {
-  .navbar-nav {
-    .nav-item:hover {
-      a {
-        background-color: transparent;
-        color: $color-green !important;
-      }
-    }  
-  }
-
-  nav {
-    padding: 10px;
-  }
-
-  .navbar-nav {
-    .nav-item {
-      a {
-        margin: 15px 0;
-      }
-    }
-  }
-
-  #banner1 {
-    div {
-      position: static;
-      margin-left: 10% !important;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 100px;
-
-      h1 {
-        @include font-UTM(normal, 25px, 31px);
-      }
-
-      img {
-        width: 45px;
-        height: 40px;
-      }
-
-      p {
-        @include font-UTM(normal, 16px, 20px);
-      }
-
-      a {
-        align-self: center;
-        margin-left: -50px;
-        margin-top: 20px;
-      }
-    }
-  }
-}
-
-@media (max-width: 769px) {
-  .navbar-nav {
-    .nav-item {
-      margin: 10px 5px;
-      padding-bottom: 10px;
-    }
-  }
-
-  #banner1 {
-    div {
-      h1 {
-        @include font-UTM(normal, 30px, 37px);
-      }
-
-      p {
-        @include font-UTM(normal, 16px, 20px);
-      }
-
-      a {
-        width: 200px;
-        height: 38px;
-        @include font-UTM(bold, 16px, 20px);
-        padding-top: 5px;
-      }
-    }
-  }
-}
+@import 'responsive';
