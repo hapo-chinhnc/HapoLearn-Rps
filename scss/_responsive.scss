@@ -1,25 +1,24 @@
 @media (max-width: 768px) {
   .navbar-nav {
     .nav-item {
+      font-size: 14px;
       margin: 10px 5px;
       padding-bottom: 10px;
     }
   }
   
   .hapolearn-banner {
-    div {
-      h1 {
+    .hapolearn-banner-text {
+      .hapolearn-banner-slogan {
         @include font-UTM(normal, 30px, 37px);
       }
   
-      p {
+      .hapolearn-banner-quotes {
         @include font-UTM(normal, 16px, 20px);
       }
-  
-      a {
-        width: 200px;
-        height: 38px;
-        padding-top: 5px;
+
+      .hapolearn-btn {
+        margin-top: 20px;
         @include font-UTM(bold, 16px, 20px);
       }
     }
@@ -36,7 +35,7 @@
     }  
   }
   
-  nav {
+  .navbar {
     padding: 10px;
   }
   
@@ -49,36 +48,27 @@
   }
   
   .hapolearn-banner {
-    div {
+    .hapolearn-banner-text {
       position: static;
-      margin-left: 10% !important;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
       padding-bottom: 100px;
-  
-      h1 {
-        @include font-UTM(normal, 25px, 31px);
+
+      .hapolearn-banner-slogan {
+        @include font-UTM(normal, 30px, 36px);
       }
   
-      img {
-        width: 45px;
-        height: 40px;
+      .hapolearn-banner-quotes {
+        @include font-UTM(normal, 20px, 24px);
       }
-  
-      p {
-        @include font-UTM(normal, 16px, 20px);
-      }
-  
+      
       a {
-        align-self: center;
-        margin-left: -50px;
-        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hapolearn-btn {
+        @include font-UTM(bold, 20px, 24px);
       }
     }
   }
 }
-  
-  
-
-  
+   
