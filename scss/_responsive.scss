@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+  .navbar-nav {
+    .nav-item {
+      font-size: 14px;
+      margin: 10px 5px;
+      padding-bottom: 10px;
+    }
+  }
+  
+  .hapolearn-banner {
+    .hapolearn-banner-text {
+      .hapolearn-banner-slogan {
+        @include font-UTM(normal, 30px, 37px);
+      }
+  
+      .hapolearn-banner-quotes {
+        @include font-UTM(normal, 16px, 20px);
+      }
+
+      .hapolearn-btn {
+        margin-top: 20px;
+        @include font-UTM(bold, 16px, 20px);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    .nav-item:hover {
+      a {
+        background-color: transparent;
+        color: #B2D235 !important;
+      }
+    }  
+  }
+  
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    .nav-item {
+      a {
+        margin: 15px 0;
+      }
+    }
+  }
+  
+  .hapolearn-banner {
+    .hapolearn-banner-text {
+      position: static;
+      padding-bottom: 100px;
+
+      .hapolearn-banner-slogan {
+        @include font-UTM(normal, 30px, 36px);
+      }
+  
+      .hapolearn-banner-quotes {
+        @include font-UTM(normal, 20px, 24px);
+      }
+      
+      a {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hapolearn-btn {
+        @include font-UTM(bold, 20px, 24px);
+      }
+    }
+  }
+}
+
