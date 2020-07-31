@@ -23,6 +23,22 @@
       }
     }
   }
+
+  .hapolearn-card-title {
+    padding-top: 5%;
+    @include font-UTM(normal, 20px, 25px);
+  }
+
+  .hapolearn-card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 43%;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    padding-bottom: 20px;
+    @include font-UTM(normal, 14px, 18px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -63,10 +79,25 @@
       a {
         display: flex;
         justify-content: center;
+        padding-bottom: 30%;
       }
 
       .hapolearn-btn {
         @include font-UTM(bold, 20px, 24px);
+      }
+    }
+  }
+
+  .hapolearn-courses {
+    margin-top: -35%;
+    padding: 0 30px;
+
+    .hapolearn-courses-items {
+      margin: 30px 0;
+
+      .hapolearn-courses-btn {
+        width: 70%;
+        height: 42px;
       }
     }
   }
