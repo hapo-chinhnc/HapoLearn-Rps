@@ -54,9 +54,39 @@
     }
   }
 
-
   .hapolearn-courses-items {
     height: 360px;
+  }
+
+  .hapolearn-why {
+    .hapolearn-why-top {
+      img {
+        transform: translateX(15px);
+        margin-top: -150px;
+      }
+    }
+
+    .hapolearn-why-title {
+      padding-top: 40px;
+      @include font-UTM(bold, 50px, 61px);
+    }
+
+    .hapolearn-why-mid {
+      img {
+        padding-right: 5px;
+      }
+
+      .hapolearn-why-text {
+        margin-top: 15px;
+        text-align: center;
+        @include font-UTM(normal, 16px, 20px);
+      }
+
+      .hapolearn-why-mid-picture {
+        margin-top: 0;
+        height: 90%;
+      }
+    }
   }
 }
 
@@ -119,10 +149,6 @@
         width: 70%;
         height: 42px;
       }
-
-      a {
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -138,6 +164,35 @@
 
     img {
       width: 35px;
+    }
+  }
+
+  .hapolearn-why {
+    .hapolearn-why-title {
+      @include font-UTM(bold, 40px, 40px);
+    }
+
+    .hapolearn-why-top {
+      img {
+        margin-top: -110px;
+        transform: translateX(15px);
+      }
+
+      .hapolearn-why-title {
+        margin-bottom: 15px;
+      }
+    }
+
+    .hapolearn-why-mid {
+      .hapolearn-why-text {
+        text-align: center;
+        @include font-UTM(normal, 14px, 17px);
+      }
+
+      img {
+        width: 18px;
+        padding-right: 5px;
+      }
     }
   }
 }
