@@ -316,4 +316,40 @@ header {
   }
 }
 
+.hapolearn-footer {
+  background-color: #505353;
+  color: white;
+
+  .hapolearn-footer-quote {
+    @include fontUtm(normal, 20px, 25px);
+  }
+
+  .hapolearn-footer-ul {
+    list-style-type: none;
+    margin-top: 16px;
+    padding-inline-end: 16px;
+
+    .hapolearn-footer-ul-link {
+      color: white;
+      text-decoration: none;
+      @include fontUtm(bold, 23px, 25px);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .hapolearn-footer-icon {
+    margin-right: 35px;
+  }
+}
+
+.hapolearn-copyright {
+  background-color: #454545;
+
+  .hapolearn-copyright-text {
+    @include fontUtm(normal, 15px, 18px);
+  }
+}
+
 @import 'responsive';
