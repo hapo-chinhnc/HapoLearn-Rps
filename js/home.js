@@ -11,8 +11,9 @@ $(document).ready(function() {
     $("#close-btn").click(function() {
         $("#chat").hide();
       });
-  });
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+    
+  });
