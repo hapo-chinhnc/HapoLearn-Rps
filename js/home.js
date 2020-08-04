@@ -1,13 +1,18 @@
-function closeDiv(id) {
-    var closeBtn = document.getElementById(id);
-    closeBtn.style.display = "none";
-}
+$(document).ready(function() {
+    $("#icon-navbar").click(function() {
+        $("#span-btn").toggleClass('fa-times');
+        $("#span-btn").toggleClass('fa-bars');
+    });
 
-function hidde_show(id) {
-    var chatBox = document.getElementById(id);
-    if(chatBox.style.display == "block") {
-        chatBox.style.display = "none";
-    } else {
-        chatBox.style.display = "block";
-    }
-}
+    $("#btn-mess").click(function() {
+      $("#chat").toggle();
+    });
+
+    $("#close-btn").click(function() {
+        $("#chat").hide();
+      });
+  });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

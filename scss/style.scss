@@ -352,4 +352,67 @@ header {
   }
 }
 
+.hapolearn-messenger {
+  position: fixed;
+  width: 380px;
+  bottom: 20px;
+  right: 50px;
+
+  .hapolearn-messenger-chatbox {
+    background-color: white;
+    border-radius: 23px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    display: none;
+
+    .hapolearn-messenger-chatbox-text {
+      img {
+        height: 35px;
+      }
+  
+      p {
+        margin-top: 5px;
+        padding: 15px;
+        background-color: #F1F0F0;
+        border-radius: 15px;
+        color: #505353;
+        -webkit-text-stroke: 0.3px;
+        @include font-Ops(normal, 12px, 17px);
+      }
+  
+      i {
+        color: #C4C4C4;
+        font-size: 24px;
+        cursor: pointer;
+        margin-top: -10px;
+      }
+    }
+
+    .hapolearn-messenger-chatbox-login {
+      p {
+        color: #B3B3B3;
+        text-align: center;
+        @include font-Ops(normal, 12px, 16px);
+      }
+    }
+
+    .hapolearn-messenger-chatbox-name {
+      @include font-Ops(normal, 12px, 16px);
+      color: #7F7F7F;
+    }
+  }
+
+  .hapolearn-messenger-icon {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.hapolearn-messenger-btnlogin {
+  background: #3184F7;
+  border-radius: 10px;
+  @include font-Ops(normal, 12px, 16px);
+}
+
 @import 'responsive';
