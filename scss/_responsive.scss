@@ -10,23 +10,23 @@
   .hapolearn-banner {
     .hapolearn-banner-text {
       .hapolearn-banner-slogan {
-        @include font-UTM(normal, 30px, 37px);
+        @include font-utm(normal, 30px, 37px);
       }
   
       .hapolearn-banner-quotes {
-        @include font-UTM(normal, 16px, 20px);
+        @include font-utm(normal, 16px, 20px);
       }
 
       .hapolearn-btn {
         margin-top: 20px;
-        @include font-UTM(bold, 16px, 20px);
+        @include font-utm(bold, 16px, 20px);
       }
     }
   }
 
   .hapolearn-card-title {
     padding-top: 5%;
-    @include font-UTM(normal, 20px, 25px);
+    @include font-utm(normal, 20px, 25px);
   }
 
   .hapolearn-card-text {
@@ -35,7 +35,7 @@
     -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    @include font-UTM(normal, 14px, 18px);
+    @include font-utm(normal, 14px, 18px);
   }
   .hapolearn-card-body {
     a {
@@ -44,11 +44,11 @@
   }
 
   .hapolearn-title {
-    @include font-UTM(bold, 50px, 61px);
+    @include font-utm(bold, 50px, 61px);
   }
   
   .hapolearn-allcourses {
-    @include font-UTM(bold, 28px, 34px);
+    @include font-utm(bold, 28px, 34px);
     &:hover {
       font-size: 30px;
     }
@@ -68,7 +68,7 @@
 
     .hapolearn-why-title {
       padding-top: 40px;
-      @include font-UTM(bold, 50px, 61px);
+      @include font-utm(bold, 50px, 61px);
     }
 
     .hapolearn-why-mid {
@@ -79,7 +79,7 @@
       .hapolearn-why-text {
         margin-top: 15px;
         text-align: center;
-        @include font-UTM(normal, 16px, 20px);
+        @include font-utm(normal, 16px, 20px);
       }
 
       .hapolearn-why-mid-picture {
@@ -90,26 +90,26 @@
   }
 
   .hapolearn-feedback-text {
-    @include font-UTM(normal, 18px, 22px);
+    @include font-utm(normal, 18px, 22px);
   }
 
   .hapolearn-banner-member {
     .hapolearn-banner-member-title {
-      @include font-UTM(bold, 35px, 43px);
+      @include font-utm(bold, 35px, 43px);
     }
 
     .hapolearn-banner-member-button {
-      @include font-UTM(bold, 20px, 25px);
+      @include font-utm(bold, 20px, 25px);
     }
   }
 
   .hapolearn-statistic {
     .hapolearn-statistic-title {
-      @include font-UTM(bold, 40px, 49px);
+      @include font-utm(bold, 40px, 49px);
     }
   
     .hapolearn-statistic-number {
-      @include font-UTM(bold, 40px, 49px);
+      @include font-utm(bold, 40px, 49px);
     }
   }
 }
@@ -142,11 +142,11 @@
       padding-bottom: 100px;
 
       .hapolearn-banner-slogan {
-        @include font-UTM(normal, 30px, 36px);
+        @include font-utm(normal, 30px, 36px);
       }
   
       .hapolearn-banner-quotes {
-        @include font-UTM(normal, 20px, 24px);
+        @include font-utm(normal, 20px, 24px);
       }
       
       a {
@@ -156,7 +156,7 @@
       }
 
       .hapolearn-btn {
-        @include font-UTM(bold, 20px, 24px);
+        @include font-utm(bold, 20px, 24px);
       }
     }
   }
@@ -177,11 +177,11 @@
   }
 
   .hapolearn-title {
-    @include font-UTM(bold, 40px, 49px);
+    @include font-utm(bold, 40px, 49px);
   }
 
   .hapolearn-allcourses {
-    @include font-UTM(bold, 22px, 27px);
+    @include font-utm(bold, 22px, 27px);
     &:hover {
       font-size: 24px;
     }
@@ -193,7 +193,7 @@
 
   .hapolearn-why {
     .hapolearn-why-title {
-      @include font-UTM(bold, 40px, 40px);
+      @include font-utm(bold, 40px, 40px);
     }
 
     .hapolearn-why-top {
@@ -210,7 +210,7 @@
     .hapolearn-why-mid {
       .hapolearn-why-text {
         text-align: center;
-        @include font-UTM(normal, 14px, 17px);
+        @include font-utm(normal, 14px, 17px);
       }
 
       img {
@@ -221,17 +221,17 @@
   }
 
   .hapolearn-feedback-text {
-    @include font-UTM(normal, 14px, 20px);
+    @include font-utm(normal, 14px, 20px);
   }
 
   .hapolearn-banner-member {
     .hapolearn-banner-member-title {
       -webkit-text-stroke: 1px;
-      @include font-UTM(bold, 23px, 28px);
+      @include font-utm(bold, 23px, 28px);
     }
 
     .hapolearn-banner-member-button {
-      @include font-UTM(bold, 18px, 22px);
+      @include font-utm(bold, 18px, 22px);
     }
   }
 
