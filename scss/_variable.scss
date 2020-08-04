@@ -7,7 +7,7 @@
 	}
 }
 
-@mixin font-UTM($font-weight, $font-size, $line-height) {
+@mixin fontUtm($font-weight, $font-size, $line-height) {
   font: $font-weight $font-size UTM;
   line-height: $line-height;
 }
