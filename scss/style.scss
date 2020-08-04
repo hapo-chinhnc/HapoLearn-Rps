@@ -217,4 +217,103 @@ header {
   }
 }
 
+.hapolearn-feedback-text {
+  color: #505353;
+  @include font-UTM(normal, 25px, 31px);
+}
+
+.hapolearn-feedback-items {
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.hapolearn-feedback-items:after {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 100%;
+  left: 5%;
+  content: '';
+  transform: rotate(45deg);
+  margin-top: -11px;
+  box-sizing: border-box;
+  background-color: white;
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.hapolearn-feedback-items-user {
+  .hapolearn-feedback-items-user-picture {
+    margin-left: 70px;
+  }
+
+  .hapolearn-feedback-items-user-infor {
+    .hapolearn-feedback-items-user-infor-text {
+      color: #11114E;
+      margin: 0;
+      -webkit-text-stroke: 0.5px;
+      @include font-UTM (bold, 20px, 25px);
+    }
+
+    i {
+      font-size: 14px;
+      color: #F2C54F;
+    }
+  }
+}
+
+.hapolearn-quote-borderleft {
+  border-left: 5px solid #D9DADC;
+  padding: 10px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.hapolearn-btn-left {
+  left: 0;
+}
+
+.hapolearn-btn-right {
+  right: 0;
+}
+
+.hapolearn-banner-member {
+  background-image: url(../img/member.png) no-repeat;
+  background-size: cover;
+
+  .hapolearn-banner-member-title {
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 2px;
+    @include font-UTM(bold, 60px, 74px);
+  }
+
+  .hapolearn-banner-member-button {
+    background-color: white;
+    text-decoration: none;
+    color: #90AB26;
+    border-radius: 40px;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    @include font-UTM(bold, 30px, 37px);
+    &:hover {
+      background-color: #f7f7f7;
+      box-shadow: none;
+    }
+  }
+}
+
+.hapolearn-statistic {
+  .hapolearn-statistic-title {
+    color: #505353;
+    @include font-UTM(bold, 60px, 74px);
+  }
+
+  .hapolearn-statistic-number {
+    color: #B2D235;
+    @include font-UTM(bold, 60px, 74px);
+  }
+}
 @import 'responsive';

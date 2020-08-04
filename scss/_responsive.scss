@@ -88,6 +88,30 @@
       }
     }
   }
+
+  .hapolearn-feedback-text {
+    @include font-UTM(normal, 18px, 22px);
+  }
+
+  .hapolearn-banner-member {
+    .hapolearn-banner-member-title {
+      @include font-UTM(bold, 35px, 43px);
+    }
+
+    .hapolearn-banner-member-button {
+      @include font-UTM(bold, 20px, 25px);
+    }
+  }
+
+  .hapolearn-statistic {
+    .hapolearn-statistic-title {
+      @include font-UTM(bold, 40px, 49px);
+    }
+  
+    .hapolearn-statistic-number {
+      @include font-UTM(bold, 40px, 49px);
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -193,6 +217,27 @@
         width: 18px;
         padding-right: 5px;
       }
+    }
+  }
+
+  .hapolearn-feedback-text {
+    @include font-UTM(normal, 14px, 20px);
+  }
+
+  .hapolearn-banner-member {
+    .hapolearn-banner-member-title {
+      -webkit-text-stroke: 1px;
+      @include font-UTM(bold, 23px, 28px);
+    }
+
+    .hapolearn-banner-member-button {
+      @include font-UTM(bold, 18px, 22px);
+    }
+  }
+
+  .hapolearn-statistic {
+    .hapolearn-statistic-title {
+      margin-top: 35px;
     }
   }
 }
