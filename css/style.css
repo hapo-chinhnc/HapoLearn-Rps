@@ -222,6 +222,12 @@ header {
   .hapolearn-feedback-items-user .hapolearn-feedback-items-user-infor i {
     font-size: 14px;
     color: #F2C54F; }
+  .hapolearn-feedback-items-user .hapolearn-feedback-items-user-infor .hapolearn-feedback-items-user-infor-courses {
+    color: #505353;
+    margin: 0;
+    -webkit-text-stroke: 0.5px;
+    font: normal 16px UTM;
+    line-height: 20px; }
 
 .hapolearn-quote-borderleft {
   border-left: 5px solid #D9DADC;

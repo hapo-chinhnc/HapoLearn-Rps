@@ -261,6 +261,13 @@ header {
       font-size: 14px;
       color: #F2C54F;
     }
+
+    .hapolearn-feedback-items-user-infor-courses {
+      color: #505353;
+      margin: 0;
+      -webkit-text-stroke: 0.5px;
+      @include fontUtm(normal, 16px, 20px);
+    }
   }
 }
 
