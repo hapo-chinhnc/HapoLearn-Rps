@@ -21,8 +21,10 @@ $(document).ready(function() {
       slidesToShow: 2,
       slidesToScroll: 1,
       adaptiveHeight: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed : 3000,
+      pauseOnFocus: true,
+      pauseOnHover: true,
       prevArrow: $('.left'),
       nextArrow: $('.right'),
 
