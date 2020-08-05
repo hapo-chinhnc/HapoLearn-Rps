@@ -129,6 +129,16 @@
         margin-right: 15px;
     }
   }
+
+  .hapolearn-slick-btn {
+    .right {
+      margin-right: 40px;
+    }
+
+    .left {
+      margin-left: 40px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -272,6 +282,36 @@
         height: 30px;
         width: 30px;
         margin-right: 10px;
+    }
+  }
+
+  .hapolearn-feedback-items {
+    @include fontUtm(normal, 14px, 17px);
+  }
+
+  .hapolearn-slick {
+    padding: 0;
+  }
+
+  .hapolearn-slick-btn {
+    .right {
+      margin-right: 0;
+    }
+
+    .left {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  .hapolearn-slick-btn {
+    .right {
+      margin-right: 60px;
+    }
+
+    .left {
+      margin-left: 60px;
     }
   }
 }

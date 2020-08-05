@@ -236,17 +236,16 @@ header {
     content: '';
     transform: rotate(45deg);
     margin-top: -11px;
-    box-sizing: border-box;
     background-color: white;
-    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
 .hapolearn-feedback-items-user {
+  width: 90%;
+
   .hapolearn-feedback-items-user-picture {
-    margin-left: 70px;
+    margin-left: 20px;
   }
 
   .hapolearn-feedback-items-user-infor {
@@ -269,14 +268,6 @@ header {
   padding: 10px;
   display: inline-block;
   margin-left: 10px;
-}
-
-.hapolearn-btn-left {
-  left: 0;
-}
-
-.hapolearn-btn-right {
-  right: 0;
 }
 
 .hapolearn-banner-member {
@@ -361,7 +352,7 @@ header {
   .hapolearn-messenger-chatbox {
     background-color: white;
     border-radius: 23px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     display: none;
 
     .hapolearn-messenger-chatbox-text {
@@ -413,6 +404,30 @@ header {
   background: #3184F7;
   border-radius: 10px;
   @include font-Ops(normal, 12px, 16px);
+}
+
+.hapolearn-slick-btn {
+  font-size: 20px;
+  padding: 0 8px;
+  top: -165px;
+  color: #969494;
+
+  .right {
+    cursor: pointer;
+    background-color: white;
+    padding-left: 11px;
+    padding-right: 9px;
+    margin-right: -6px;
+    border-radius: 50%;
+    border: 0.5px solid #C4C4C4;
+  }
+
+  .left {
+    margin-left: -6px;
+    padding-left: 9px;
+    padding-right: 11px;
+    @extend .right;
+  }
 }
 
 @import 'responsive';
