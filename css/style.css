@@ -404,6 +404,7 @@ header {
     margin-top: 10px; }
 
   .hapolearn-title {
+    margin-top: 50px;
     font: bold 50px UTM;
     line-height: 61px; }
 
@@ -515,6 +516,7 @@ header {
         height: 42px; }
 
   .hapolearn-title {
+    margin-top: 50px;
     font: bold 40px UTM;
     line-height: 49px; }
 
@@ -578,4 +580,5 @@ header {
     margin-right: 0; }
   .hapolearn-slick-btn .left {
     margin-left: 0; } }
+
 /*# sourceMappingURL=style.css.map */
