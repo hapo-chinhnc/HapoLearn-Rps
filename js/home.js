@@ -15,4 +15,25 @@ $(document).ready(function() {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     })
+
+    $('.hapolearn-slick').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      adaptiveHeight: false,
+      autoplay: false,
+      autoplaySpeed : 3000,
+      prevArrow: $('.left'),
+      nextArrow: $('.right'),
+
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
   });
