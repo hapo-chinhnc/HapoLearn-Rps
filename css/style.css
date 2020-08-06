@@ -167,10 +167,8 @@ header {
   background-image: url(../img/background2black.png);
   background-size: cover;
   margin-top: 100px; }
-  .hapolearn-why .hapolearn-why-top img {
-    margin-top: -225px; }
-  .hapolearn-why .hapolearn-why-mid-picture {
-    margin-top: -150px; }
+  .hapolearn-why .hapolearn-why-top-picture {
+    margin-top: -275px; }
   .hapolearn-why .hapolearn-why-title {
     color: white;
     -webkit-text-stroke: 1.5px;
@@ -179,6 +177,7 @@ header {
   .hapolearn-why .hapolearn-why-text {
     color: white;
     margin-top: 5px;
+    text-align: right;
     font: normal 20px UTM;
     line-height: 25px; }
 
@@ -236,8 +235,11 @@ header {
   margin-left: 10px; }
 
 .hapolearn-banner-member {
-  background-image: url(../img/member.png) no-repeat;
-  background-size: cover; }
+  background-image: url("../img/Member.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 125px 0; }
   .hapolearn-banner-member .hapolearn-banner-member-title {
     color: white;
     text-align: center;
@@ -337,7 +339,8 @@ header {
       line-height: 16px;
       color: #7F7F7F; }
   .hapolearn-messenger .hapolearn-messenger-icon {
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 2; }
     .hapolearn-messenger .hapolearn-messenger-icon:hover {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
@@ -348,29 +351,37 @@ header {
   font: normal 12px "Open Sans";
   line-height: 16px; }
 
-.hapolearn-slick-btn {
-  font-size: 20px;
-  padding: 0 8px;
-  top: -165px;
-  color: #969494; }
-  .hapolearn-slick-btn .right, .hapolearn-slick-btn .left {
-    cursor: pointer;
-    background-color: white;
-    padding-left: 11px;
-    padding-right: 9px;
-    margin-right: -6px;
-    border-radius: 50%;
-    border: 0.5px solid #C4C4C4; }
-  .hapolearn-slick-btn .left {
-    margin-left: -6px;
-    padding-left: 9px;
-    padding-right: 11px; }
+.slide-btn-right {
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  cursor: pointer; }
+  .slide-btn-right:hover {
+    -webkit-box-shadow: inset 0 0 10px #535353;
+            box-shadow: inset 0 0 10px #535353;
+    border-radius: 40%; }
+
+.slide-btn-left {
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
+  z-index: 1; }
+  .slide-btn-left:hover {
+    -webkit-box-shadow: inset 0 0 10px #535353;
+            box-shadow: inset 0 0 10px #535353;
+    border-radius: 40%; }
 
 @media (min-width: 1140px) {
-  .hapolearn-slick-btn .right, .hapolearn-slick-btn .left {
-    margin-right: 60px; }
-  .hapolearn-slick-btn .left {
-    margin-left: 60px; } }
+  .hapolearn-why-mid-picture {
+    position: relative;
+    right: 70px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    padding-bottom: 50px;
+    margin-top: -100px; }
+
+  .hapolearn-why .hapolearn-why-text {
+    padding-right: 60px; } }
 @media (max-width: 768px) {
   .navbar-nav .nav-item {
     font-size: 14px;
@@ -423,22 +434,24 @@ header {
   .hapolearn-courses-items {
     height: 360px; }
 
-  .hapolearn-why .hapolearn-why-top img {
-    margin-top: -150px; }
+  .hapolearn-why .hapolearn-why-top-picture {
+    margin-top: -145px; }
   .hapolearn-why .hapolearn-why-title {
-    padding-top: 40px;
+    margin-top: 20px;
     font: bold 50px UTM;
     line-height: 61px; }
-  .hapolearn-why .hapolearn-why-mid img {
-    padding-right: 5px; }
-  .hapolearn-why .hapolearn-why-mid .hapolearn-why-text {
+  .hapolearn-why .hapolearn-why-text {
     margin-top: 15px;
     text-align: center;
     font: normal 16px UTM;
     line-height: 20px; }
-  .hapolearn-why .hapolearn-why-mid .hapolearn-why-mid-picture {
-    margin-top: 0;
-    height: 90%; }
+    .hapolearn-why .hapolearn-why-text img {
+      width: 15px; }
+  .hapolearn-why .hapolearn-why-mid-picture {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    position: relative;
+    right: 17px; }
 
   .hapolearn-feedback-text {
     font: normal 18px UTM;
@@ -469,7 +482,7 @@ header {
     width: 40px;
     margin-right: 15px; }
 
-  .hapolearn-slick-btn .right, .hapolearn-slick-btn .left {
+  .hapolearn-slick-btn .right {
     margin-right: 40px; }
   .hapolearn-slick-btn .left {
     margin-left: 40px; }
@@ -537,17 +550,14 @@ header {
   .hapolearn-why .hapolearn-why-title {
     font: bold 40px UTM;
     line-height: 40px; }
-  .hapolearn-why .hapolearn-why-top img {
+  .hapolearn-why .hapolearn-why-top-picture {
     margin-top: -110px; }
-  .hapolearn-why .hapolearn-why-top .hapolearn-why-title {
+  .hapolearn-why .hapolearn-why-title {
     margin-bottom: 15px; }
-  .hapolearn-why .hapolearn-why-mid .hapolearn-why-text {
+  .hapolearn-why .hapolearn-why-text {
     text-align: center;
     font: normal 14px UTM;
     line-height: 17px; }
-  .hapolearn-why .hapolearn-why-mid img {
-    width: 18px;
-    padding-right: 5px; }
 
   .hapolearn-feedback-text {
     font: normal 14px UTM;
@@ -582,9 +592,7 @@ header {
   .hapolearn-slick {
     padding: 0; }
 
-  .hapolearn-slick-btn .right, .hapolearn-slick-btn .left {
-    margin-right: 0; }
-  .hapolearn-slick-btn .left {
-    margin-left: 0; } }
+  .slide-btn-right {
+    right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
