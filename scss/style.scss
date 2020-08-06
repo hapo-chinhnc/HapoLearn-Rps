@@ -418,7 +418,7 @@ header {
   @include font-Ops(normal, 12px, 16px);
 }
 
-.right {
+.slide-btn-right {
   position: absolute;
   top: 25%;
   right: 20px;
@@ -429,7 +429,7 @@ header {
   }
 }
 
-.left {
+.slide-btn-left {
   position: absolute;
   top: 25%;
   cursor: pointer;

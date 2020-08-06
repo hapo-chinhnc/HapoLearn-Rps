@@ -25,8 +25,8 @@ $(document).ready(function() {
       autoplaySpeed : 3000,
       pauseOnFocus: true,
       pauseOnHover: true,
-      prevArrow: "<img src='img/btn-left.png' class='left'>",
-      nextArrow: "<img src='img/btn-right.png' class='right'>",
+      prevArrow: "<img src='img/btn-left.png' class='slide-btn-left'>",
+      nextArrow: "<img src='img/btn-right.png' class='slide-btn-right'>",
 
       responsive: [
         {

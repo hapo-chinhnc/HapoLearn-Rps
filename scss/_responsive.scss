@@ -93,7 +93,7 @@
 
     .hapolearn-why-text {
       margin-top: 15px;
-        text-align: center;
+      text-align: center;
       @include fontUtm(normal, 16px, 20px);
 
       img {
@@ -310,7 +310,7 @@
     padding: 0;
   }
 
-  .right {
+  .slide-btn-right {
     right: 0;
   }
 }
