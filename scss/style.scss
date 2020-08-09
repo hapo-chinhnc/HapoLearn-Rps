@@ -44,6 +44,13 @@ body {
   margin: 0;
 }
 
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0;
+  border: 0;
+}
+
 header {
   background-image: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
 }
@@ -73,7 +80,6 @@ header {
     color: white;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
-    margin-left: 20px;
     -webkit-text-stroke: 0.5px;
     @include fontUtm(bold, 30px, 37px);
     &:hover {
@@ -95,12 +101,14 @@ header {
 .hapolearn-courses-items {
   margin: 0 15px;
   border-radius: 15px;
+  height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
   .hapolearn-courses-items-logo-blue {
     background-color: #3F6185;
     height: 50%;
     object-fit: contain;
+    padding: 50px;
     border-radius: 15px 15px 0 0;
   }
 
@@ -111,6 +119,7 @@ header {
 
   .hapolearn-courses-items-logo-php {
     background-color: #556598;
+    padding: 30px;
     @extend .hapolearn-courses-items-logo-blue;
   }
 }
@@ -146,10 +155,11 @@ header {
 
 .hapolearn-othercourses {
   .hapolearn-courses-items {
-    .hapolearn-courses-items-logo-blue {
+    .hapolearn-courses-items-logo-css {
       background-color: #24ABE2;
       height: 50%;
       object-fit: contain;
+      padding: 50px;
       border-radius: 15px 15px 0 0;
     }
 
@@ -160,6 +170,7 @@ header {
 
     .hapolearn-courses-items-logo-java {
       background-color: #1B75BB;
+      padding: 25px;
       @extend .hapolearn-courses-items-logo-blue;
     }
   }
@@ -168,7 +179,6 @@ header {
 .hapolearn-title {
   color: #11114E;
   -webkit-text-stroke: 2px;
-  margin-top: 110px;
   @include fontUtm(bold, 80px, 90px);
 }
 
@@ -206,10 +216,13 @@ header {
 
   .hapolearn-why-text {
     color: white;
-    margin-top: 5px;
     text-align: right;
     @include fontUtm(normal, 20px, 25px);
   }
+}
+
+.hapolearn-feedback {
+  margin-top: 110px;
 }
 
 .hapolearn-feedback-text {
@@ -274,15 +287,16 @@ header {
 }
 
 .hapolearn-banner-member {
-  background-image: url('../img/Member.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('../img/Member.png') no-repeat center;
   background-size: cover;
-  padding: 125px 0;
+  margin-top: 110px;
+
+  .wrap {
+    padding: 10% 0;
+  }
 
   .hapolearn-banner-member-title {
     color: white;
-    text-align: center;
     -webkit-text-stroke: 2px;
     @include fontUtm(bold, 60px, 74px);
   }
@@ -293,19 +307,24 @@ header {
     color: #90AB26;
     border-radius: 40px;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    margin-top: 15px;
+    outline: 0;
     @include fontUtm(bold, 30px, 37px);
     &:hover {
       background-color: #f7f7f7;
       box-shadow: none;
+      border: 0;
     }
   }
 }
 
 .hapolearn-statistic {
-  margin-bottom: 60px;
+  margin-top: 110px;
 
   .hapolearn-statistic-title {
     color: #505353;
+    margin-top: 60px;
     @include fontUtm(bold, 60px, 74px);
   }
 
@@ -326,12 +345,13 @@ header {
   .hapolearn-footer-ul {
     list-style-type: none;
     margin-top: 16px;
-    padding-inline-end: 16px;
+    padding-inline-end: 30px;
+    padding-inline-start: 15px;
 
     .hapolearn-footer-ul-link {
       color: white;
       text-decoration: none;
-      @include fontUtm(bold, 23px, 25px);
+      @include fontUtm(normal, 23px, 25px);
       &:hover {
         text-decoration: underline;
       }
@@ -420,7 +440,7 @@ header {
 
 .slide-btn-right {
   position: absolute;
-  top: 25%;
+  top: 23%;
   right: 20px;
   cursor: pointer;
   &:hover {
@@ -431,7 +451,7 @@ header {
 
 .slide-btn-left {
   position: absolute;
-  top: 25%;
+  top: 23%;
   cursor: pointer;
   z-index: 1;
   &:hover {
