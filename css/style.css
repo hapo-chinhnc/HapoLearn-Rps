@@ -196,9 +196,9 @@ header {
   .hapolearn-why .hapolearn-why-content .hapolearn-why-content-img {
     position: relative;
     top: -200px;
-    right: -30px;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4); }
+    right: -50px;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
 
 .hapolearn-feedback-text {
   color: #505353;
